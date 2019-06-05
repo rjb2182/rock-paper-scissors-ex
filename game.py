@@ -11,9 +11,7 @@ print("YOU CHOSE:", user_choice)
 #  Validate inputs
 
 
-if user_choice in ["rock", "paper", "scissors"]:
-    print("VALID")
-else:
+if user_choice not in ["rock", "paper", "scissors"]:
     print("Invalid selection, please try again...")
     exit()
 
