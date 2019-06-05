@@ -13,8 +13,9 @@ print("____________")
 print("YOU CHOSE:", user_choice)
 #  Validate inputs
 
+options = ["rock", "paper", "scissors"]
 
-if user_choice not in ["rock", "paper", "scissors"]:
+if user_choice not in options:
     print("Invalid selection, please try again...")
     exit()
 
@@ -22,11 +23,13 @@ if user_choice not in ["rock", "paper", "scissors"]:
 
 print("Generating...")
 
-computer_choice = random.choice(["rock", "paper", "scissors"])
+computer_choice = random.choice(options)
 print("___________")
 print("The Computer Chose:", computer_choice)
 
 #  Determine the winner
+
+
 
 #  Display final outputs / outcomes
 
