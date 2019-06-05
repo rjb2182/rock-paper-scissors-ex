@@ -1,3 +1,18 @@
 # game.py
 
 print('Rock, Paper, Scissors, Shoot!')
+
+#  Capture inputs
+
+user_choice = input("Please choose one of the following options: 'rock', 'paper', or 'scissors' (without the quotes): ")
+
+print("____________")
+print("YOU CHOSE:", user_choice)
+#  Validate inputs
+
+#  Generate computer selection
+
+#  Determine the winner
+
+#  Display final outputs / outcomes
+
