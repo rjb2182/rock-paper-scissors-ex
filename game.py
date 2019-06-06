@@ -2,67 +2,72 @@
 
 import random
 
+def my_message():
+    return "HELLO"
 
-print('Rock, Paper, Scissors, Shoot!')
+if __name__ == "__main__":
 
-#  Capture inputs
 
-user_choice = input("Please choose one of the following options: 'rock', 'paper', or 'scissors' (without the quotes): ")
+    print('Rock, Paper, Scissors, Shoot!')
 
-print("____________")
-print("YOU CHOSE:", user_choice)
-#  Validate inputs
+    #  Capture inputs
 
-options = ["rock", "paper", "scissors"]
+    user_choice = input("Please choose one of the following options: 'rock', 'paper', or 'scissors' (without the quotes): ")
 
-if user_choice not in options:
-    print("Invalid selection, please try again...")
-    exit()
+    print("____________")
+    print("YOU CHOSE:", user_choice)
+    #  Validate inputs
 
-#  Generate computer selection
+    options = ["rock", "paper", "scissors"]
 
-print("Generating...")
+    if user_choice not in options:
+        print("Invalid selection, please try again...")
+        exit()
 
-computer_choice = random.choice(options)
-print("___________")
-print("The Computer Chose:", computer_choice)
+    #  Generate computer selection
 
-#  DETERMINE THE WINNER
+    print("Generating...")
 
-# rock beats scissors
+    computer_choice = random.choice(options)
+    print("___________")
+    print("The Computer Chose:", computer_choice)
 
-# paper beats rock
+    #  DETERMINE THE WINNER
 
-# scissors beats paper
+    # rock beats scissors
 
-# same selection is a tie
+    # paper beats rock
 
-if user_choice == computer_choice:
-    print("TIE")
+    # scissors beats paper
 
-elif user_choice == 'rock' and computer_choice == "paper":
-    print("THE WINNER IS PAPER")
-    print("The computer won, sorry!")
+    # same selection is a tie
 
-elif user_choice == 'rock' and computer_choice == "scissors":
-    print("THE WINNER IS ROCK")
-    print("You Win!!  Yay you!")
+    if user_choice == computer_choice:
+        print("TIE")
 
-elif user_choice == 'paper' and computer_choice == "scissors":
-    print("THE WINNER IS SCISSORS")
-    print("The computer won, sorry!")
+    elif user_choice == 'rock' and computer_choice == "paper":
+        print("THE WINNER IS PAPER")
+        print("The computer won, sorry!")
 
-elif user_choice == 'paper' and computer_choice == "rock":
-    print("THE WINNER IS PAPER")
-    print("You Win!!  Yay you!")
+    elif user_choice == 'rock' and computer_choice == "scissors":
+        print("THE WINNER IS ROCK")
+        print("You Win!!  Yay you!")
 
-elif user_choice == 'scissors' and computer_choice == "paper":
-    print("THE WINNER IS SCISSORS")
-    print("You Win!!  Yay you!")
+    elif user_choice == 'paper' and computer_choice == "scissors":
+        print("THE WINNER IS SCISSORS")
+        print("The computer won, sorry!")
 
-elif user_choice == 'scissors' and computer_choice == "rock":
-    print("THE WINNER IS ROCK")
-    print("The computer won, sorry!")
+    elif user_choice == 'paper' and computer_choice == "rock":
+        print("THE WINNER IS PAPER")
+        print("You Win!!  Yay you!")
+
+    elif user_choice == 'scissors' and computer_choice == "paper":
+        print("THE WINNER IS SCISSORS")
+        print("You Win!!  Yay you!")
+
+    elif user_choice == 'scissors' and computer_choice == "rock":
+        print("THE WINNER IS ROCK")
+        print("The computer won, sorry!")
 
 
 
