@@ -5,6 +5,34 @@ import random
 def my_message():
     return "HELLO"
 
+def determine_winner(u, c):
+    if u == c:
+        print("TIE")
+
+    elif u == 'rock' and c == "paper":
+        print("THE WINNER IS PAPER")
+        print("The computer won, sorry!")
+
+    elif u == 'rock' and c == "scissors":
+        print("THE WINNER IS ROCK")
+        print("You Win!!  Yay you!")
+
+    elif u == 'paper' and c == "scissors":
+        print("THE WINNER IS SCISSORS")
+        print("The computer won, sorry!")
+
+    elif u == 'paper' and c == "rock":
+        print("THE WINNER IS PAPER")
+        print("You Win!!  Yay you!")
+
+    elif u == 'scissors' and c == "paper":
+        print("THE WINNER IS SCISSORS")
+        print("You Win!!  Yay you!")
+
+    elif u == 'scissors' and c == "rock":
+        print("THE WINNER IS ROCK")
+        print("The computer won, sorry!")
+
 if __name__ == "__main__":
 
 
